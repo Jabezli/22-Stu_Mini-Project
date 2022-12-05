@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <!-- HTML head -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>My Landing Page</title>
+
+  <!-- Link the CSS stylesheet here -->
+</head>
+
+<body>
+  <header>
+    <Nav class="text-right">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="https://github.com/">Github</a></li>
+        <li><a href="#Contact">Contact Us</a></li>
+      </ul>
+    </Nav>  
+  </header>
+  <!-- Header, Navigation w/ links -->
+
+  <!-- Main content -->
+  <Main>
+    <h1 class="text-center">Coding is Fun</h1>
+    <figure> <!-- actually I don't fully understand why we need to include the img inside the figure here  -->
+      <img src="assets/images/image-1.png" alt="An image shows coming soon">
+      <figcaption class="text-center">
+        <h3>See You in the Class</h3>
+      </figcaption>
+    </figure>
+    
+    <Section id="Contact"> <!--so by add anchor "#Contact" in "a", then id Contact here, when I click
+    Contact Us, it moves to the Contact form-->
+      <h2 class="text-center">Contact Us</h2>
+      <form>
+        <ul>
+          <li>
+            <label class="text-right" for="name">Name:</label>
+            <input type="text" id="name" name="user-name">
+            <!--when you put id=name, the brower will catch that is a name box, 
+              the syntax seems to be built in so I didn't have to create an ID for it
+            when I put "name syntax" is the autofill drop down menu would only show the usernames
+          I used in this webpage-->
+          </li>
+          <li>
+            <label class="text-right" for="email">Email:</label>
+            <input type="text" id="email" name="user-email">
+          </li>
+          <div class="text-center"> 
+            <!--I attempted to not include "div" here and add text-center to button directly but it 
+            didn't work. Guess the div here is just added to adjust the position of the button-->
+            <button type="submit">Send</button>
+          </div>
+        </ul>
+      </form>
+    </Section>
+
+    <footer class="text-center">
+      © 2022 Jabez First Product
+    </footer>
+
+
+  </Main>
+  <!-- (title, image/figure, image/figure caption) -->
+
+  <!-- Contact section -->
+  <!-- (section header) -->
+  <!-- (contact form w/ inputs & submit button) -->
+
+  <!-- Footer -->
+ 
+</body>
+
+</html>

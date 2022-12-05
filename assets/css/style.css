@@ -1,0 +1,119 @@
+/* Universal Selector */
+/* I googled this most common code as I don't know what to put here*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Element Selectors */
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    color: rgb(7, 4, 1);
+    background-color: bisque;
+}
+
+
+
+header {
+    height: 50px;
+    width: 100%;
+    line-height: 65px; /* to adjust position of the header within the frame defined right above. Larger px, lower*/
+    position: fixed;
+    background-color:  #011307;
+    border-bottom:5px solid #e3fc0657;
+}
+
+footer{
+    margin-top: 0px;
+    height: 50px;
+    width: 100%;
+    background-color:  #011307;
+    color: #FDF8F5;    
+}
+li {
+    display: inline;
+    padding: 0px 20px;
+    text-decoration: none;
+}
+
+a {
+    /* adding this to replace the ugly blue font for a href links*/
+    text-decoration: none;
+    color: bisque;
+}
+
+
+main {
+    padding: 65px 0; 
+    /* top and bottom, left and right*/
+  }
+
+img{
+    display:block;
+    margin: 70px Auto;
+    margin-bottom:20px;
+    
+}
+
+
+section {
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding: 10px 0px 30px 0px;
+    border-top: 2px solid #e3fc0657;
+    background-color:  #01130767;
+  }
+
+form{
+    margin:10px auto;
+    padding:20px;
+    display:block;
+    height: 100px;
+    width: 420px;
+    border: 3px solid  #e3fc0657;
+    border-radius:20px;
+
+}
+
+label {
+    display:inline-block;
+    width: 100px;
+  }
+
+input{
+    box-sizing:border-box;
+    width:200px;
+    border:1px solid black;   
+}
+
+button {
+    height: 20px;
+    width: 80px;
+    background-color: #4F4846;
+    color: #FDF8F5;
+  }
+
+/* Class & ID Selectors */
+
+
+
+.text-right {
+    /*I can add this into "li" but then text-align to right would only work for "li". 
+    Have it standing-alone here so I have this class for other part of a page*/
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+    
+.contact-area { /*instead of having this class, I can just copy this into "form" so all form section will have this effect*/
+    margin:10px auto;
+    padding:20px;
+    display:block;
+    height: 100px;
+    width: 420px;
+    border: 3px solid  #e3fc0657;
+}
+
